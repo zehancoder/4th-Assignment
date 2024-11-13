@@ -1,0 +1,34 @@
+.animation {
+    animation: animate 1s ease-in-out infinite both;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+@keyframes animate {
+    from{
+        transform: translateY(0%);
+        
+    }
+    to{
+        transform: translateY(-15%);
+    }
+}
+
+
+.animation::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    background-color: #F44335;
+    transition: .5s;
+}
+
+.animation:hover::before{
+    height: 100%;
+}
