@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .header-link{
-    @apply lg:text-xl text-base text-[#072125]  hover:dark:text-[#F44335] hover:text-[#F44335] transition;
+    @apply lg:text-xl text-base text-[#072125]  hover:scale-105  duration-75 hover:text-[#F44335] transition;
 }
